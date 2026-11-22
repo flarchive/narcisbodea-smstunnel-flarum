@@ -2,13 +2,13 @@
 
 > **Read-only archive of released versions of smstunnel/flarum-sms.** Not for installation: use [Packagist](https://packagist.org/packages/smstunnel/flarum-sms) or the [upstream repository](https://github.com/narcisbodea/smstunnel-flarum).
 
-**0** versions archived · Latest: [`v1.0.0`](https://github.com/flarchive/narcisbodea-smstunnel-flarum/tree/archive/v1.0.0) · License: `MIT` · Flarum: `^2.0`
+**1** versions archived · Latest: [`v1.0.0`](https://github.com/flarchive/narcisbodea-smstunnel-flarum/tree/archive/v1.0.0) · License: `MIT` · Flarum: `^2.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v1.0.0` | 2026-11-22 | `^2.0` | [Browse](https://github.com/flarchive/narcisbodea-smstunnel-flarum/tree/archive/v1.0.0) |
 
 Catalog entry: [packages/narcisbodea-smstunnel-flarum.json](https://github.com/flarchive/archive-index/blob/main/packages/narcisbodea-smstunnel-flarum.json)
 
