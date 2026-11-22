@@ -1,0 +1,53 @@
+{
+    "name": "smstunnel/flarum-sms",
+    "description": "Text alerts for your Flarum staff, and opt-in reply and mention texts for members, sent from your own Android phone with SMSTunnel.",
+    "keywords": ["flarum", "sms", "text messages", "notifications", "smstunnel"],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "homepage": "https://smstunnel.io",
+    "authors": [
+        {
+            "name": "NARBOWEB SRL",
+            "email": "support@smstunnel.io",
+            "homepage": "https://smstunnel.io"
+        }
+    ],
+    "support": {
+        "email": "support@smstunnel.io",
+        "issues": "https://github.com/narcisbodea/smstunnel-flarum/issues",
+        "source": "https://github.com/narcisbodea/smstunnel-flarum"
+    },
+    "require": {
+        "php": "^8.3",
+        "flarum/core": "^2.0",
+        "guzzlehttp/guzzle": "^7.7"
+    },
+    "suggest": {
+        "flarum/flags": "Staff texts when a post is flagged.",
+        "flarum/approval": "Staff texts when a post waits for approval.",
+        "flarum/mentions": "Member texts for replies and mentions."
+    },
+    "autoload": {
+        "psr-4": {
+            "SMSTunnel\\FlarumSms\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "SMSTunnel Texts",
+            "category": "feature",
+            "optional-dependencies": [
+                "flarum/flags",
+                "flarum/approval",
+                "flarum/mentions",
+                "flarum/gdpr"
+            ],
+            "icon": {
+                "image": "assets/icon.svg",
+                "backgroundSize": "cover",
+                "backgroundColor": "#1a3a9e",
+                "color": "#fff"
+            }
+        }
+    }
+}

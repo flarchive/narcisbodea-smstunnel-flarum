@@ -1,0 +1,31 @@
+.SmstunnelPhone {
+  max-width: 480px;
+  margin-top: 16px;
+
+  &-intro {
+    color: var(--muted-color);
+    font-size: 13px;
+  }
+
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .FormControl {
+      flex: 1 1 180px;
+      width: auto;
+    }
+  }
+
+  &-message {
+    font-size: 13px;
+    color: var(--muted-color);
+
+    &--error {
+      color: var(--alert-error-color, #d83e3e);
+    }
+  }
+}

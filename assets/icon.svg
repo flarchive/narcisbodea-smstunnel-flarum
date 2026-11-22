@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a3a9e"/>
+      <stop offset="100%" stop-color="#2d5fd3"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f0fe"/>
+      <stop offset="100%" stop-color="#c5d8f8"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="256" height="256" rx="48" fill="url(#bg)"/>
+  <!-- Phone body -->
+  <rect x="78" y="42" width="100" height="172" rx="16" fill="url(#phone)" opacity="0.95"/>
+  <rect x="78" y="42" width="100" height="172" rx="16" fill="none" stroke="#8baae0" stroke-width="2"/>
+  <!-- Phone screen -->
+  <rect x="88" y="62" width="80" height="124" rx="4" fill="#1a3a9e" opacity="0.85"/>
+  <!-- Phone notch -->
+  <rect x="110" y="48" width="36" height="6" rx="3" fill="#8baae0" opacity="0.5"/>
+  <!-- Phone home button -->
+  <circle cx="128" cy="200" r="8" fill="none" stroke="#8baae0" stroke-width="1.5" opacity="0.5"/>
+  <!-- SMS bubble 1 (sent - right aligned) -->
+  <rect x="104" y="74" width="56" height="22" rx="11" fill="#4a8af4"/>
+  <rect x="104" y="74" width="56" height="22" rx="11" fill="none" stroke="#5c9bff" stroke-width="0.5"/>
+  <!-- SMS lines in bubble 1 -->
+  <line x1="112" y1="82" x2="150" y2="82" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <line x1="112" y1="89" x2="140" y2="89" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- SMS bubble 2 (received - left aligned) -->
+  <rect x="96" y="104" width="50" height="22" rx="11" fill="#6c63ff" opacity="0.8"/>
+  <!-- SMS lines in bubble 2 -->
+  <line x1="104" y1="112" x2="136" y2="112" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <line x1="104" y1="119" x2="126" y2="119" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- SMS bubble 3 (sent) -->
+  <rect x="108" y="134" width="52" height="22" rx="11" fill="#4a8af4"/>
+  <line x1="116" y1="142" x2="150" y2="142" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <line x1="116" y1="149" x2="138" y2="149" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Checkmark on last bubble -->
+  <polyline points="148,148 151,151 156,144" fill="none" stroke="#7fff7f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Signal/connection waves (left side - tunnel concept) -->
+  <path d="M 52 108 Q 38 128 52 148" fill="none" stroke="#7fb8ff" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 42 100 Q 22 128 42 156" fill="none" stroke="#7fb8ff" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 32 92 Q 6 128 32 164" fill="none" stroke="#7fb8ff" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+  <!-- Signal/connection waves (right side) -->
+  <path d="M 204 108 Q 218 128 204 148" fill="none" stroke="#7fb8ff" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 214 100 Q 234 128 214 156" fill="none" stroke="#7fb8ff" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 224 92 Q 250 128 224 164" fill="none" stroke="#7fb8ff" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+  <!-- Arrow showing data flow (tunnel) -->
+  <path d="M 30 230 L 60 230" stroke="#7fb8ff" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <polygon points="62,230 55,225 55,235" fill="#7fb8ff" opacity="0.6"/>
+  <!-- "SMS" text -->
+  <text x="78" y="238" font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="28" fill="white" opacity="0.95">SMS</text>
+  <!-- "tunnel" text -->
+  <text x="150" y="238" font-family="Arial,Helvetica,sans-serif" font-weight="400" font-size="22" fill="#a1ccff" opacity="0.85">tunnel</text>
+</svg>

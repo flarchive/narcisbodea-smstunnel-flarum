@@ -1,0 +1,55 @@
+.SmstunnelAdmin {
+  max-width: 560px;
+  margin-bottom: 24px;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .FormControl {
+      flex: 1 1 200px;
+      width: auto;
+    }
+  }
+
+  &-staff {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px;
+
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--control-bg);
+    }
+  }
+
+  &-number {
+    font-family: monospace;
+  }
+
+  &-state {
+    flex: 1;
+    color: var(--muted-color);
+    font-size: 12px;
+  }
+
+  &-message {
+    font-size: 13px;
+    color: var(--muted-color);
+
+    &--error {
+      color: var(--alert-error-color, #d83e3e);
+    }
+  }
+}

@@ -1,0 +1,94 @@
+smstunnel-sms:
+  admin:
+    intro: >-
+      Sends ordinary texts from your own Android phone, through the SMSTunnel app. Everything here is off until you turn it on.
+    get_key: Get a key in your SMSTunnel dashboard, under Apps.
+    key:
+      heading: API key
+      label: SMSTunnel API key
+      saved: A key is saved. It stays on the server and is never shown again.
+      none: No key saved yet.
+      save: Save key
+      remove: Remove key
+      placeholder: Paste your key
+      removed: Key removed. No text will be sent.
+      stored: Key saved.
+    switches:
+      flags_label: Text the staff numbers when a post is flagged
+      flags_help: Needs the Flags extension. At most one text per 10 minutes, with a count and a link.
+      approval_label: Text the staff numbers when a post waits for approval
+      approval_help: Needs the Approval extension. At most one text per 10 minutes, with a count and a link.
+      members_label: Let members turn on texts for replies and mentions
+      members_help: Adds a Text column to each member's notification settings. Every member starts off and confirms their own number with a code.
+      member_day_label: Most texts one member can get in a day
+      member_day_help: "From 1 to 20. Default: 5."
+      forum_day_label: Most member texts the forum can send in a day
+      forum_day_help: "From 1 to 1000. Default: 100."
+    staff:
+      heading: Staff numbers
+      help: Each number must confirm with a code before it gets alerts. Alerts carry a count and a link, never words from a post.
+      number_label: Number with + and country code
+      add: Add and send code
+      code_label: Code from the text
+      confirm: Confirm
+      remove: Remove
+      confirmed: Confirmed
+      waiting: Waiting for code
+      empty: No staff numbers yet.
+    test:
+      heading: Test text
+      help: Sends one fixed text to the number you type. Up to 5 an hour.
+      send: Send test text
+      accepted: SMSTunnel accepted the text for your phone. Check that it arrives.
+    errors:
+      invalid_number: "Use the international format: + and the country code, digits only, for example +40712345678."
+      invalid_key: That doesn't look like an API key.
+      invalid_code: That code is not valid. Check the text, or ask for a new code.
+      no_key: Save an API key first.
+      wait: A code was just sent. Please wait a minute before asking for another.
+      too_many: Too many requests. Please try again later.
+      too_many_numbers: You have reached the limit of staff numbers.
+      already_saved: This number is already saved.
+      cap: This API key reached its daily limit, so the text was not sent. More can go out after 00:00 UTC, or with a higher limit on the key.
+      bad_key: SMSTunnel did not accept this API key.
+      refused: SMSTunnel refused this text.
+      unclear: There was no clear answer. The text may have gone out, so it was not sent again.
+      generic: That did not work. Please try again.
+
+  forum:
+    settings:
+      column: Text
+      heading: Text messages
+      intro: Get a text when someone replies to your post or mentions you. Texts are off until you add your number, confirm it and tick the Text column above.
+      number_label: Your mobile number, with + and the country code
+      send_code: Send me a code
+      code_label: Code from the text
+      confirm: Confirm number
+      sent: If this number can get texts, a code is on its way. It works for 10 minutes.
+      confirmed: Your number is confirmed. Now tick the Text column above for what you want.
+      saved: "Your number: {number}"
+      change: Use another number
+      remove: Remove my number
+      removed: Your number was removed. You will not get any more texts.
+      remove_confirm: Remove your number and stop these texts?
+    errors:
+      invalid_number: "Use the international format: + and the country code, digits only, for example +40712345678."
+      invalid_code: That code is not valid. Check the text, or ask for a new code.
+      wait: A code was just sent. Please wait a minute before asking for another.
+      too_many: Too many requests. Please try again later.
+      not_allowed: Confirm your email address first.
+      generic: That did not work. Please try again.
+
+  lib:
+    text:
+      a_member: A member
+      reply: "{site}: {name} replied to your post. {url} Turn these texts off in your notification settings."
+      mention: "{site}: {name} mentioned you. {url} Turn these texts off in your notification settings."
+      flagged: "{site}: {count, plural, one {# post was flagged} other {# posts were flagged}}. Review: {url}"
+      approval: "{site}: {count, plural, one {# post is waiting for approval} other {# posts are waiting for approval}}. Review: {url}"
+      code_member: "{site}: your code to turn on forum texts is {code}. It works for 10 minutes. If you did not ask for it, ignore this text."
+      code_staff: "{site}: your code to get forum alerts is {code}. It works for 10 minutes. If you did not ask for it, ignore this text."
+      test: "{site}: this is a test text from your forum."
+    gdpr:
+      export_description: The mobile number you confirmed for forum texts.
+      delete_description: Removes the mobile number you confirmed for forum texts.

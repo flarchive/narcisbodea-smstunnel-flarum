@@ -1,0 +1,5 @@
+* text=auto eol=lf
+js/dist/* -diff linguist-generated
+assets/*.svg text
+/tests export-ignore
+/js/node_modules export-ignore

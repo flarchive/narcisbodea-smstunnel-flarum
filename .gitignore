@@ -1,0 +1,8 @@
+vendor/
+composer.lock
+js/node_modules/
+js/package-lock.json
+js/dist-typings/
+.DS_Store
+Thumbs.db
+*.log
